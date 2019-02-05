@@ -21,5 +21,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "grid-styled": "^5.0.2",
+    "styled-components": "^4.1.3"
+  }
 }

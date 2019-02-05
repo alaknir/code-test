@@ -1,0 +1,62 @@
+[
+  {
+    "script": "AADR",
+    "quantity": 430,
+    "price": "$50.30",
+    "avgCost": "$41.75",
+    "investedAmount": "$17",
+    "percPortfolioValue": 952.07,
+    "unrealizedPL": "22.06%",
+    "percReturn": "$3"
+  },
+  {
+    "script": "MFEM",
+    "quantity": 210,
+    "price": "$23.20",
+    "avgCost": "$22.50",
+    "investedAmount": "$4",
+    "percPortfolioValue": 725.84,
+    "unrealizedPL": "5.81%",
+    "percReturn": "$146.16"
+  },
+  {
+    "script": "JPEM",
+    "quantity": 328,
+    "price": "$52.50",
+    "avgCost": "$56.70",
+    "investedAmount": "$18",
+    "percPortfolioValue": 597.6,
+    "unrealizedPL": "22.86%",
+    "percReturn": "($1,377.60)"
+  },
+  {
+    "script": "KEMQ",
+    "quantity": 801,
+    "price": "$20.40",
+    "avgCost": "$22.24",
+    "investedAmount": "$17",
+    "percPortfolioValue": 811.04,
+    "unrealizedPL": "21.89%",
+    "percReturn": "($1,470.64)"
+  },
+  {
+    "script": "KLDW",
+    "quantity": 523,
+    "price": "$32.90",
+    "avgCost": "$26.32",
+    "investedAmount": "$13",
+    "percPortfolioValue": 765.36,
+    "unrealizedPL": "16.92%",
+    "percReturn": "$3,441.34"
+  },
+  {
+    "script": "KOIN",
+    "quantity": 335,
+    "price": "$25.40",
+    "avgCost": "$25.40",
+    "investedAmount": "$8,509.00",
+    "percPortfolioValue": "10.46%",
+    "unrealizedPL": "$0",
+    "percReturn": "0.00%"
+  }
+]
