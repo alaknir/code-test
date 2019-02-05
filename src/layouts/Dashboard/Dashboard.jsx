@@ -8,10 +8,10 @@ const Dashboard = () => (
   <div>
     This is Dashboard
     <Flex>
-      <Box w={3 / 4}>
+      <Box width={3 / 4}>
         <LeftContainer />
       </Box>
-      <Box w={1 / 4}>
+      <Box width={1 / 4}>
         <RightContainer />
       </Box>
     </Flex>
