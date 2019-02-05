@@ -6,7 +6,7 @@ import { ScriptPrice } from "../CommonStyled";
 
 const Script = ({ script, price }) => (
   <Box>
-    {script}
+    <Box>{script}</Box>
     <ScriptPrice>{price}</ScriptPrice>
   </Box>
 );

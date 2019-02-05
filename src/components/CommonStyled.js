@@ -1,19 +1,19 @@
-import styled from "grid-styled";
+import styled from "styled-components";
 const PRICE_FONT_COLOR = "#4e9e9b";
 const PRIMARY_LABEL_COLOR = "#CACACA";
 
-export const ScriptPrice = styled("label")`
+export const ScriptPrice = styled.label`
   font-size: 22px;
   color: ${PRICE_FONT_COLOR};
 `;
 
-export const BuySellButton = styled("button")`
+export const BuySellButton = styled.button`
   border: 1px solid orange;
   border-radius: 5px;
   background-color: #fff;
 `;
 
-export const LabelSmall = styled("label")`
+export const LabelSmall = styled.label`
   color: ${PRIMARY_LABEL_COLOR};
   font-size: 10px;
 `;
