@@ -9,17 +9,9 @@ const initialState = {
 export const actions = createActions({
   app: {
     scripts: {
-      get: () => {
-        console.log("===get");
-      },
-      receive: response => {
-        console.log("===receive");
-        return response;
-      },
-      error: error => {
-        console.log("===error");
-        return error;
-      }
+      get: () => {},
+      receive: response => response,
+      error: error => error
     }
   }
 });

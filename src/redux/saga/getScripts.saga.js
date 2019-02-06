@@ -9,7 +9,6 @@ export function* getScripts() {
     url: "http://localhost:8888/scripts",
     method: "get"
   });
-  console.log(response);
   if (response.status !== 200) {
     yield put(scriptActions.app.scripts.error(response));
   } else {
