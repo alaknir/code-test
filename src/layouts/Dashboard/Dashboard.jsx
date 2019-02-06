@@ -3,17 +3,17 @@ import { Flex, Box } from "grid-styled";
 
 import LeftContainer from "../../containers/LeftContainer";
 import RightContainer from "../../containers/RightContainer";
+import { RightBox } from "./Dashboard.styles";
 
 const Dashboard = () => (
   <div>
-    This is Dashboard
     <Flex>
-      <Box width={3 / 4}>
+      <Box width={3 / 4} my={10} mx={10}>
         <LeftContainer />
       </Box>
-      <Box width={1 / 4}>
+      <RightBox width={1 / 4} mY={10} mx={10}>
         <RightContainer />
-      </Box>
+      </RightBox>
     </Flex>
   </div>
 );

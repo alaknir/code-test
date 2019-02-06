@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Flex, Box } from "grid-styled";
 
-import { LabelSmall, LabelSmallBold } from "../CommonStyled";
+import {
+  LabelSmall,
+  LabelSmallBold,
+  StyledBoxRightAligned
+} from "../CommonStyled";
 
 const CostValue = ({ label, value, isCompletelyBold }) => {
   const LabelComponent = isCompletelyBold ? LabelSmallBold : LabelSmall;
@@ -11,9 +15,9 @@ const CostValue = ({ label, value, isCompletelyBold }) => {
       <Box width={1 / 2}>
         <LabelComponent>{label}</LabelComponent>
       </Box>
-      <Box width={1 / 2}>
+      <StyledBoxRightAligned width={1 / 2}>
         <LabelSmallBold>{value}</LabelSmallBold>
-      </Box>
+      </StyledBoxRightAligned>
     </Flex>
   );
 };

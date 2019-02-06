@@ -1,16 +1,20 @@
 import React from "react";
 import { Flex, Box } from "grid-styled";
 
-import { LabelSmall, LabelSmallBold } from "../CommonStyled";
+import {
+  LabelSmall,
+  LabelSmallBold,
+  StyledBoxRightAligned
+} from "../CommonStyled";
 
 const PercentageValue = ({ label, value }) => (
   <Flex>
     <Box width={3 / 4}>
       <LabelSmall>{label}</LabelSmall>
     </Box>
-    <Box width={1 / 4}>
+    <StyledBoxRightAligned width={1 / 4}>
       <LabelSmallBold>{value}</LabelSmallBold>
-    </Box>
+    </StyledBoxRightAligned>
   </Flex>
 );
 
