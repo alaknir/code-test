@@ -1,5 +1,11 @@
 import React from "react";
 
-const RightContainer = () => <div>This is right container</div>;
+import DonutChart from "../../components/DonutChart";
+
+const RightContainer = () => (
+  <div>
+    <DonutChart value={70} valuelabel={"Mutual funds"} size={250} />
+  </div>
+);
 
 export default RightContainer;
