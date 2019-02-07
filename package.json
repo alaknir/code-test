@@ -5,8 +5,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
-    "d3": "^5.8.2",
     "grid-styled": "^5.0.2",
+    "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
