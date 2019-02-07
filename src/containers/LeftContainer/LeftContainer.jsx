@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Box } from "grid-styled";
+import { Box, Flex } from "grid-styled";
 
 import {
   Script,
@@ -11,12 +11,20 @@ import {
   HorizontalBarProgressiveChart,
   HorizontalBalancingBarChart
 } from "../../components";
-import { TableCellBox, TabeRowFlex } from "../../components/CommonStyled";
+import {
+  TableCellBox,
+  TabeRowFlex,
+  IShareComponent,
+  BoxTextCenter,
+  LabelSmallBold,
+  LabelMediumBold
+} from "../../components/CommonStyled";
 
 import {
   getScriptData,
   getIsScriptFetching
 } from "../../redux/selectors/index";
+import iSharesIcons from "../../icons/iShares.png";
 
 // import data from "../../data/data.json";
 
@@ -25,7 +33,20 @@ const LeftContainer = ({ scriptData }) => (
     {scriptData.map((record, index) => (
       <TabeRowFlex>
         <TableCellBox width="30%">
-          <Script script={record.script} price={record.price} />
+          <Flex>
+            <BoxTextCenter width={1 / 4}>
+              <Script script={record.script} price={record.price} />
+            </BoxTextCenter>
+            <Box width={3 / 4}>
+              <IShareComponent>
+                <img src={iSharesIcons} alt={"iSharesIcons"} width="60%" />
+                <Box>
+                  <LabelMediumBold>{`Product name ${index}`}</LabelMediumBold>
+                </Box>
+                <LabelSmallBold>{`Product type ${index}`}</LabelSmallBold>
+              </IShareComponent>
+            </Box>
+          </Flex>
         </TableCellBox>
         <TableCellBox width="20%">
           <CostValue label={"Quantitiy"} value={record.quantity} />

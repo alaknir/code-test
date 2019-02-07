@@ -11,8 +11,9 @@ const BUTTON_BG_COLOR = "#fff";
 const ROW_BG_COLOR = "#fff";
 
 export const ScriptPrice = styled.label`
-  font-size: 22px;
+  font-size: 18px;
   color: ${PRICE_FONT_COLOR};
+  font-weight: bold;
 `;
 
 export const BuySellButton = styled.button`
@@ -39,6 +40,12 @@ export const LabelSmallBold = styled(LabelSmall)`
   color: ${LABEL_BOLD_COLOR};
 `;
 
+export const LabelMediumBold = styled.label`
+  font-weight: bold;
+  color: ${LABEL_BOLD_COLOR};
+  font-size: medium;
+`;
+
 export const StyledBoxRightAligned = styled(Box)`
   text-align: right;
 `;
@@ -60,3 +67,9 @@ export const TabeRowFlex = styled(Flex)`
   margin-bottom: 5px;
   border-radius: 3px;
 `;
+
+export const BoxTextCenter = styled(Box)`
+  text-align: center;
+`;
+
+export const IShareComponent = styled(Box)``;

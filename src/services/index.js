@@ -6,7 +6,7 @@ const services = ({ url, method }) => async () =>
       if (response.status === 200) {
         return response;
       }
-      throw `status ${response.status}`;
+      throw { error: `status ${response.status}` };
     })
     .catch(error => {
       console.log("Internal server error");

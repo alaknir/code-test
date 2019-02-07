@@ -1,6 +1,8 @@
 import { get } from "lodash";
 
-export const getScriptData = state => get(state, "scripts.data", []);
+import scriptData from "../../data/data.json";
+
+export const getScriptData = state => get(state, "scripts.data", scriptData);
 
 export const getScriptError = state => get(state, "scripts.error", {});
 
