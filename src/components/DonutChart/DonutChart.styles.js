@@ -32,7 +32,7 @@ export const DonutCircleIndicator = styled.circle`
 `;
 
 export const ChartCanvas = styled.svg`
-  margin: 0 auto;
+  margin: 10px;
   border-radius: 50%;
   display: block;
 `;

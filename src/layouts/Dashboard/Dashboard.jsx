@@ -11,7 +11,7 @@ const Dashboard = () => (
       <Box width={3 / 4} my={10} mx={10}>
         <LeftContainer />
       </Box>
-      <RightBox width={1 / 4} mY={10} mx={10}>
+      <RightBox width={1 / 4} my={10} mx={10}>
         <RightContainer />
       </RightBox>
     </Flex>

@@ -4,7 +4,7 @@ const services = ({ url, method }) => async () =>
   await axios[method](url)
     .then(response => {
       if (response.status === 200) {
-        return response.data;
+        return response;
       }
       throw `status ${response.status}`;
     })

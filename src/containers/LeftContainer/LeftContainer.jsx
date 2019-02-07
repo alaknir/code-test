@@ -1,13 +1,28 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { Box } from "grid-styled";
 
-import { Script, Button, CostValue, PercentageValue } from "../../components";
+import {
+  Script,
+  Button,
+  CostValue,
+  PercentageValue,
+  HorizontalBarProgressiveChart,
+  HorizontalBalancingBarChart
+} from "../../components";
 import { TableCellBox, TabeRowFlex } from "../../components/CommonStyled";
 
-import data from "../../data/data.json";
-const LeftContainer = () => (
+import {
+  getScriptData,
+  getIsScriptFetching
+} from "../../redux/selectors/index";
+
+// import data from "../../data/data.json";
+
+const LeftContainer = ({ scriptData }) => (
   <div>
-    {data.map(record => (
+    {scriptData.map((record, index) => (
       <TabeRowFlex>
         <TableCellBox width="30%">
           <Script script={record.script} price={record.price} />
@@ -27,6 +42,18 @@ const LeftContainer = () => (
             label={"% of portfolio value"}
             value={record.percPortfolioValue}
           />
+          <Box>
+            <HorizontalBarProgressiveChart
+              bar={{
+                height: 15,
+                value:
+                  (index + 1) % 2 === 0 ? (index + 1) * 10 : -(index + 1) * 10,
+                positionX: 0,
+                positionY: 0
+              }}
+              size={{ sizeX: "100%", sizeY: "30px" }}
+            />
+          </Box>
         </TableCellBox>
         <TableCellBox width="20%">
           <CostValue
@@ -35,6 +62,17 @@ const LeftContainer = () => (
             isCompletelyBold
           />
           <PercentageValue label={"% return"} value={record.percReturn} />
+          <HorizontalBalancingBarChart
+            bar={{
+              height: 15,
+              width: 15,
+              value:
+                (index + 1) % 2 === 0 ? (index + 1) * 10 : -(index + 1) * 10,
+              positionX: 0,
+              positionY: 0
+            }}
+            size={{ sizeX: "170", sizeY: "30px" }}
+          />
         </TableCellBox>
         <TableCellBox width="10%">
           <Box>
@@ -49,4 +87,14 @@ const LeftContainer = () => (
   </div>
 );
 
-export default LeftContainer;
+const mapStateToProps = state => ({
+  scriptData: getScriptData(state),
+  isScriptFetching: getIsScriptFetching(state)
+});
+
+LeftContainer.propTypes = {
+  scriptData: PropTypes.shape([]).isRequired,
+  isScriptFetching: PropTypes.bool.isRequired
+};
+
+export default connect(mapStateToProps)(LeftContainer);

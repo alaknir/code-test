@@ -31,7 +31,7 @@ export const BuySellButton = styled.button`
 
 export const LabelSmall = styled.label`
   color: ${PRIMARY_LABEL_COLOR};
-  font-size: 10px;
+  font-size: 12px;
 `;
 
 export const LabelSmallBold = styled(LabelSmall)`
