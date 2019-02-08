@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Box, Flex } from "grid-styled";
 
 const PRICE_FONT_COLOR = "#4e9e9b";
-const PRIMARY_LABEL_COLOR = "#9e9e9e";
+const PRIMARY_LABEL_COLOR = "#8a8080";
 const LABEL_BOLD_COLOR = "#404040";
 const TABLE_CELL_BG_COLOR = "#f9f9f9";
 const BUTTON_BORDER_COLOR = "#d67b54";
@@ -20,10 +20,12 @@ export const BuySellButton = styled.button`
   border: 1px solid ${BUTTON_BORDER_COLOR};
   border-radius: 5px;
   background-color: ${BUTTON_BG_COLOR};
-  padding: 6px 30px;
+  padding: 5px 0px;
   margin-top: 5px;
   color: ${BUTTON_FONT_COLOR};
   cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
   :active {
     background-color: ${BUTTON_BORDER_COLOR};
     color: ${BUTTON_BG_COLOR};
@@ -40,7 +42,12 @@ export const LabelSmallBold = styled(LabelSmall)`
   color: ${LABEL_BOLD_COLOR};
 `;
 
-export const LabelMediumBold = styled.label`
+export const LabelMedium = styled.label`
+  color: ${PRIMARY_LABEL_COLOR};
+  font-size: medium;
+`;
+
+export const LabelMediumBold = styled(LabelMedium)`
   font-weight: bold;
   color: ${LABEL_BOLD_COLOR};
   font-size: medium;
@@ -54,16 +61,15 @@ export const TableCellBox = styled(Box)`
   background-color: ${TABLE_CELL_BG_COLOR};
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-right: 10px;
+  margin-right: 5px;
   :first-child {
-    margin-left: 10px;
+    margin-left: 5px;
   }
   padding: 5px;
 `;
 
 export const TabeRowFlex = styled(Flex)`
   background-color: ${ROW_BG_COLOR};
-  padding: 3px;
   margin-bottom: 5px;
   border-radius: 3px;
 `;
@@ -73,3 +79,8 @@ export const BoxTextCenter = styled(Box)`
 `;
 
 export const IShareComponent = styled(Box)``;
+
+export const FlexVerticalCenter = styled(Flex)`
+  justify-content: center;
+  height: 100%;
+`;

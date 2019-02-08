@@ -37,7 +37,7 @@ const HorizontalBarProgressiveChart = ({ size: { sizeX, sizeY }, bar }) => {
   return (
     <svg width={sizeX} height={sizeY}>
       <RectBG
-        rx={"10"}
+        rx={"5"}
         ry={"15"}
         x={bar.positionX}
         y={bar.positionY}
@@ -45,7 +45,7 @@ const HorizontalBarProgressiveChart = ({ size: { sizeX, sizeY }, bar }) => {
         width={"100%"}
       />
       <RectValue
-        rx={"10"}
+        rx={"5"}
         ry={"15"}
         x={bar.positionX}
         y={bar.positionY}
@@ -79,7 +79,7 @@ const HorizontalBalancingBarChart = ({ size: { sizeX, sizeY }, bar }) => {
   return (
     <svg width={sizeX} height={sizeY}>
       <RectBG
-        rx={"10"}
+        rx={"5"}
         ry={"15"}
         x={bar.positionX}
         y={bar.positionY}
@@ -88,7 +88,7 @@ const HorizontalBalancingBarChart = ({ size: { sizeX, sizeY }, bar }) => {
       />
       <RectValue
         rx={"5"}
-        ry={"5"}
+        ry={"1"}
         x={barX}
         y={bar.positionY}
         height={bar.height}

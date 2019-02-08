@@ -3,6 +3,9 @@ import Button from "./Button";
 import CostValue from "./CostValue";
 import PercentageValue from "./PercentageValue";
 import DonutChart from "./DonutChart";
+import Menu from "./Menu";
+import Legend from "./Legend";
+
 import {
   HorizontalBarProgressiveChart,
   HorizontalBalancingBarChart
@@ -15,5 +18,7 @@ export {
   PercentageValue,
   DonutChart,
   HorizontalBarProgressiveChart,
-  HorizontalBalancingBarChart
+  HorizontalBalancingBarChart,
+  Menu,
+  Legend
 };

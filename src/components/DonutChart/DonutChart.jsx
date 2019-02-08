@@ -2,17 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {
-  DonutTextValue,
-  DonutTextPercentage,
-  DonutTextLabel,
   DonutCircleTrack,
   DonutCircleIndicator,
-  ChartCanvas,
-  DonutText
+  ChartCanvas
 } from "./DonutChart.styles";
 
 const DonutChart = props => {
-  const halfsize = props.size * 0.5;
+  const halfsize = props.size / 2;
   const radius = halfsize - props.strokewidth * 0.5;
   const circumference = 2 * Math.PI * radius;
   const strokeval = (props.value * circumference) / 100;
@@ -41,18 +37,6 @@ const DonutChart = props => {
         transform={rotateval}
         style={indicatorstyle}
       />
-      <DonutText
-        className="donutchart-text"
-        x={halfsize}
-        y={halfsize}
-        style={{ textAnchor: "middle" }}
-      >
-        <DonutTextValue>{props.value}</DonutTextValue>
-        <DonutTextPercentage>%</DonutTextPercentage>
-        <DonutTextLabel x={halfsize} y={halfsize + 10}>
-          {props.valuelabel}
-        </DonutTextLabel>
-      </DonutText>
     </ChartCanvas>
   );
 };
@@ -68,7 +52,7 @@ DonutChart.defaultProps = {
   value: 0,
   valuelabel: "Completed",
   size: 116,
-  strokewidth: 26
+  strokewidth: 20
 };
 
 export default DonutChart;

@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+export const CIRCLE_TRACK_COLOR = "#ab9049";
+export const CIRCLE_INDICATOR_COLOR = "#60b5dc";
+
 export const DonutText = styled.text`
   font-family: "Roboto";
   fill: #607580;
@@ -19,13 +22,13 @@ export const DonutTextLabel = styled.tspan`
 
 export const DonutCircleTrack = styled.circle`
   fill: transparent;
-  stroke: #dae2e5;
+  stroke: ${CIRCLE_TRACK_COLOR};
   stroke-width: 26;
 `;
 
 export const DonutCircleIndicator = styled.circle`
   fill: transparent;
-  stroke: #009688;
+  stroke: ${CIRCLE_INDICATOR_COLOR};
   stroke-width: 26;
   stroke-dasharray: 0 10000;
   transition: stroke-dasharray 0.3s ease;

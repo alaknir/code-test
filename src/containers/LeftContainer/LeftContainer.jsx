@@ -9,7 +9,8 @@ import {
   CostValue,
   PercentageValue,
   HorizontalBarProgressiveChart,
-  HorizontalBalancingBarChart
+  HorizontalBalancingBarChart,
+  Menu
 } from "../../components";
 import {
   TableCellBox,
@@ -17,7 +18,8 @@ import {
   IShareComponent,
   BoxTextCenter,
   LabelSmallBold,
-  LabelMediumBold
+  LabelMediumBold,
+  FlexVerticalCenter
 } from "../../components/CommonStyled";
 
 import {
@@ -34,12 +36,17 @@ const LeftContainer = ({ scriptData }) => (
       <TabeRowFlex>
         <TableCellBox width="30%">
           <Flex>
-            <BoxTextCenter width={1 / 4}>
+            <BoxTextCenter width={0.5 / 3}>
+              <FlexVerticalCenter>
+                <Menu />
+              </FlexVerticalCenter>
+            </BoxTextCenter>
+            <BoxTextCenter width={0.75 / 3} py={10}>
               <Script script={record.script} price={record.price} />
             </BoxTextCenter>
-            <Box width={3 / 4}>
+            <Box width={1.75 / 3}>
               <IShareComponent>
-                <img src={iSharesIcons} alt={"iSharesIcons"} width="60%" />
+                <img src={iSharesIcons} alt={"iSharesIcons"} width="45%" />
                 <Box>
                   <LabelMediumBold>{`Product name ${index}`}</LabelMediumBold>
                 </Box>
@@ -63,16 +70,15 @@ const LeftContainer = ({ scriptData }) => (
             label={"% of portfolio value"}
             value={record.percPortfolioValue}
           />
-          <Box>
+          <Box mt={2}>
             <HorizontalBarProgressiveChart
               bar={{
-                height: 15,
-                value:
-                  (index + 1) % 2 === 0 ? (index + 1) * 10 : -(index + 1) * 10,
+                height: 10,
+                value: parseInt(record.percPortfolioValue),
                 positionX: 0,
                 positionY: 0
               }}
-              size={{ sizeX: "100%", sizeY: "30px" }}
+              size={{ sizeX: "100%", sizeY: "10px" }}
             />
           </Box>
         </TableCellBox>
@@ -83,17 +89,18 @@ const LeftContainer = ({ scriptData }) => (
             isCompletelyBold
           />
           <PercentageValue label={"% return"} value={record.percReturn} />
-          <HorizontalBalancingBarChart
-            bar={{
-              height: 15,
-              width: 15,
-              value:
-                (index + 1) % 2 === 0 ? (index + 1) * 10 : -(index + 1) * 10,
-              positionX: 0,
-              positionY: 0
-            }}
-            size={{ sizeX: "170", sizeY: "30px" }}
-          />
+          <Box mt={2}>
+            <HorizontalBalancingBarChart
+              bar={{
+                height: 10,
+                width: 10,
+                value: parseInt(record.percReturn),
+                positionX: 0,
+                positionY: 0
+              }}
+              size={{ sizeX: "170", sizeY: "10px" }}
+            />
+          </Box>
         </TableCellBox>
         <TableCellBox width="10%">
           <Box>

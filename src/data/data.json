@@ -5,9 +5,9 @@
     "price": "$50.30",
     "avgCost": "$41.75",
     "investedAmount": "$17",
-    "percPortfolioValue": 952.07,
-    "unrealizedPL": "22.06%",
-    "percReturn": "$3"
+    "percPortfolioValue": "22.06%",
+    "unrealizedPL": "$3,676.93",
+    "percReturn": "20.48%"
   },
   {
     "script": "MFEM",
@@ -15,9 +15,9 @@
     "price": "$23.20",
     "avgCost": "$22.50",
     "investedAmount": "$4",
-    "percPortfolioValue": 725.84,
-    "unrealizedPL": "5.81%",
-    "percReturn": "$146.16"
+    "percPortfolioValue": "5.81%",
+    "unrealizedPL": "$146.16",
+    "percReturn": "3.09%"
   },
   {
     "script": "JPEM",
@@ -25,9 +25,9 @@
     "price": "$52.50",
     "avgCost": "$56.70",
     "investedAmount": "$18",
-    "percPortfolioValue": 597.6,
-    "unrealizedPL": "22.86%",
-    "percReturn": "($1,377.60)"
+    "percPortfolioValue": "22.86%",
+    "unrealizedPL": "-$1,377.60",
+    "percReturn": "-7.41%"
   },
   {
     "script": "KEMQ",
@@ -35,9 +35,9 @@
     "price": "$20.40",
     "avgCost": "$22.24",
     "investedAmount": "$17",
-    "percPortfolioValue": 811.04,
-    "unrealizedPL": "21.89%",
-    "percReturn": "($1,470.64)"
+    "percPortfolioValue": "21.89%",
+    "unrealizedPL": "-$1,470.64",
+    "percReturn": "-8.26%"
   },
   {
     "script": "KLDW",
@@ -45,9 +45,9 @@
     "price": "$32.90",
     "avgCost": "$26.32",
     "investedAmount": "$13",
-    "percPortfolioValue": 765.36,
-    "unrealizedPL": "16.92%",
-    "percReturn": "$3,441.34"
+    "percPortfolioValue": "16.92%",
+    "unrealizedPL": "$3,441.34",
+    "percReturn": "25.00%"
   },
   {
     "script": "KOIN",
