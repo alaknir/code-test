@@ -1,8 +1,9 @@
 import styled from "styled-components";
-
-const RECT_COLOR_RED = "#d13912";
-const RECT_COLOR_GREEN = "#11a338";
-const RECT_BG_COLOR = "#e9eaec";
+import {
+  RECT_COLOR_RED,
+  RECT_COLOR_GREEN,
+  RECT_BG_COLOR
+} from "../CommonStyled";
 
 export const RectBG = styled.rect`
   fill: ${RECT_BG_COLOR};

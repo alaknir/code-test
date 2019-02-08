@@ -88,7 +88,11 @@ const LeftContainer = ({ scriptData }) => (
             value={record.unrealizedPL}
             isCompletelyBold
           />
-          <PercentageValue label={"% return"} value={record.percReturn} />
+          <PercentageValue
+            label={"% return"}
+            value={record.percReturn}
+            withArrow
+          />
           <Box mt={2}>
             <HorizontalBalancingBarChart
               bar={{
